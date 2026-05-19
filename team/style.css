@@ -56,3 +56,29 @@ header > nav > .link.current {
   border-bottom: 2px solid #ffffff;
   color: #ffffff;
 }
+
+header > section#banner {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 81%;
+  position: relative;
+}
+header > section#banner > h1 {
+  bottom: 1.7em;
+  font-size: 4.4rem;
+  font-weight: 800;
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+header > section#banner > p {
+  bottom: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  position: absolute;
+  text-transform: lowercase;
+}
