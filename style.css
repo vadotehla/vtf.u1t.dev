@@ -1,0 +1,132 @@
+:root {
+  --background-color: #dbdbdb;
+  --text-color: #000000;
+  --text-muted: #222222;
+  --accent-color: #0055ff;
+  --font:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  height: 45vh;
+  position: relative;
+  width: 100vw;
+}
+header > nav {
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff26;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  height: 19%;
+  padding: 0 1.5rem;
+  position: relative;
+}
+header > nav > .link {
+  align-items: flex-end;
+  color: #ffffff80;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header > nav > .link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+header > nav > .link.current {
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+header > section#banner {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 81%;
+  position: relative;
+}
+header > section#banner > h1 {
+  bottom: 1.7em;
+  font-size: 4.4rem;
+  font-weight: 800;
+  margin: 0;
+  position: absolute;
+  text-transform: uppercase;
+}
+header > section#banner > p {
+  bottom: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  position: absolute;
+  text-transform: lowercase;
+}
+
+main {
+  padding-top: 2.5rem;
+  width: 100%;
+}
+main > .section {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+main > .section:last-child {
+  margin-bottom: 0;
+}
+main > .section > h2 {
+  border-bottom: 2px solid var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+main > .section > p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+main > .section > p > .link {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+main > .section > p > .link:hover {
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  header > section#banner > h1 {
+    font-size: 3rem;
+  }
+  main {
+    padding-top: 1.5rem;
+  }
+  main > .section {
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+  }
+}
