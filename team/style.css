@@ -88,6 +88,7 @@ main {
   width: 100%;
 }
 main > .section {
+  margin-bottom: 1.5rem;
   padding: 0 1.5rem;
   width: 100%;
 }
@@ -102,4 +103,66 @@ main > .section > h2 {
   margin-top: 0;
   padding-bottom: 0.25rem;
   text-transform: uppercase;
+}
+
+main > .section > .cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  width: 100%;
+}
+main > .section > .cards > .card {
+  align-items: center;
+  background-color: #eeeeee;
+  border: 1px solid #00000024;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.1rem;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease;
+}
+main > .section > .cards > .card:hover {
+  border-color: #00000055;
+  transform: translateY(-2px);
+}
+main > .section > .cards > .card > .pfp {
+  aspect-ratio: 1 / 1;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  width: min(100%, 140px);
+}
+main > .section > .cards > .card > .name {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.25;
+  text-align: center;
+}
+main > .section > .cards > .card > .name > .uname {
+  color: var(--accent-color);
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+  text-decoration: none;
+}
+main > .section > .cards > .card > .name > .uname:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+main > .section > .cards > .card > .projects {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+span {
+  margin: 0;
+  padding: 0;
 }
