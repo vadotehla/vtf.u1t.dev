@@ -82,3 +82,24 @@ header > section#banner > p {
   position: absolute;
   text-transform: lowercase;
 }
+
+main {
+  padding-top: 2.5rem;
+  width: 100%;
+}
+main > .section {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+main > .section:last-child {
+  margin-bottom: 0;
+}
+main > .section > h2 {
+  border-bottom: 2px solid var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
