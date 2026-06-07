@@ -4,3 +4,11 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+node_modules
+package.json
+package-lock.json
+.stylelintrc.json
+*.ignore
+*-ignore*
+vw
